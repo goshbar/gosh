@@ -1,7 +1,3 @@
-.home .navbar-item {
-  display: block;
-}
-
 .navbar-item {
   text-decoration: none;
   color: $black;
@@ -31,4 +27,15 @@
     &.is-active span { background-color: $black }
     &:hover { background: transparent; }
   }
+}
+
+.home .navbar-item {
+  display: block;
+}
+
+.home .navbar-item.social {
+  display: inline-block;
+  font-size: 25px;
+  margin: 20px 10px 0;
+  padding: 0;
 }
