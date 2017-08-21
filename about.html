@@ -4,22 +4,37 @@ title: About
 permalink: /about
 ---
 
-<div class="about">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-6 is-offset-3">
-        <h1> about</h1>
-        <p>Some cheesy description.</p>
-        <h2> hours </h2>
-        <table class="hours">
-          {% for day in site.data.hours %}
-            <tr>
-              <td class="hours__day"> {{day[0]}} </td>
-              <td class="hours__time"> {{day[1]}}</td>
-            </tr>
-          {% endfor %}
-        </table>
-      </div>
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-4">
+      <h1> about</h1>
+      <p>Some cheesy description.</p>
+      
+    </div>
+    <div class="column is-narrow">
+      
+      <table class="address">
+        <tr>
+          <td>
+            <i class="fa fa-map-marker"></i>
+          </td>
+          <td>
+            <span> Via di Santo Spirito, 46R, </span>
+            <br /> 
+            </span> 50125 Firenze Fl </span>
+          </td>
+        </tr>
+      </table>
+
+      <h2> hours </h2>
+      <table class="hours">
+        {% for day in site.data.hours %}
+          <tr>
+            <td class="hours__day"> {{day[0]}} </td>
+            <td class="hours__time"> {{day[1]}}</td>
+          </tr>
+        {% endfor %}
+      </table>
     </div>
   </div>
 </div>

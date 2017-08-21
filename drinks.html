@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /drinks
+title: drinks
+---
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-4">
+      <h1>drinks</h1>
+      <div class="menu">
+        {% for section in site.data.drinks %}
+          <div class="menu__section">
+            <h2 class="menu__header">{{section[0]}}</h2>
+            {% assign drinks = section[1] %}
+            {% for drink in drinks %}
+              <div class="menu__item">
+                <p class="menu__item__name">
+                  {{drink.name}} - 
+                  <span class="menu__item__price"> {{drink.price}}</span>
+                </p>
+                <p class="menu__item__description">{{drink.description}}</p>
+              </div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 .hours {
-  margin: 0 auto;
+  margin: 20px auto;
 
   &__day {
     text-align: left;
@@ -11,4 +11,32 @@
     padding-bottom: 5px;
   }
   
+}
+
+.address {
+  margin: 20px auto;
+
+  td:first-child {
+    padding-right: 10px;
+    vertical-align: top;
+
+    i {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  span {
+    line-height: 20px;
+  }
+}
+
+@media(min-width: 769px) {
+  .about {
+    text-align: left;
+
+    .hours, .address {
+      margin: 20px 0;
+    }
+  }
 }

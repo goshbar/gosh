@@ -1,3 +1,10 @@
 .page {
   text-align: center;
 }
+
+.page-content {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
