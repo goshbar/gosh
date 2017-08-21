@@ -1,0 +1,14 @@
+.hours {
+  margin: 0 auto;
+
+  &__day {
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  &__day,&__time {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  
+}

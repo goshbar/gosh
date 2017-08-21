@@ -1,0 +1,25 @@
+---
+layout: default
+title: About
+permalink: /about
+---
+
+<div class="about">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-6 is-offset-3">
+        <h1> about</h1>
+        <p>Some cheesy description.</p>
+        <h2> hours </h2>
+        <table class="hours">
+          {% for day in site.data.hours %}
+            <tr>
+              <td class="hours__day"> {{day[0]}} </td>
+              <td class="hours__time"> {{day[1]}}</td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

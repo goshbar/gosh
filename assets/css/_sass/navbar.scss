@@ -1,0 +1,33 @@
+.home .navbar-item {
+  display: block;
+}
+
+.navbar-item {
+  text-decoration: none;
+
+  &:hover{
+    background: transparent !important;
+    text-decoration: underline;
+  }
+}
+
+.navbar {
+  background: transparent;
+
+  .navbar-brand a {
+    font-weight: 700;
+    font-size: 25px;
+
+    &:hover { text-decoration: none; }
+  }
+
+  .navbar-item {
+    color: $black;
+    font-size: 18px;
+  }
+
+  .navbar-burger {
+    &.is-active span { background-color: $black }
+    &:hover { background: transparent; }
+  }
+}
