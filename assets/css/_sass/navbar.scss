@@ -4,6 +4,8 @@
 
 .navbar-item {
   text-decoration: none;
+  color: $black;
+  font-size: 18px;
 
   &:hover{
     background: transparent !important;
@@ -19,11 +21,6 @@
     font-size: 25px;
 
     &:hover { text-decoration: none; }
-  }
-
-  .navbar-item {
-    color: $black;
-    font-size: 18px;
   }
 
   .navbar-burger {
