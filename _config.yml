@@ -26,6 +26,13 @@ sass:
   sass_dir: assets/css/_sass
   style: compressed
 
+plugins:
+  - jekyll-polyglot
+
+languages: ["en", "am", "it", "de"]
+default_lang: "en"
+exclude_from_localization: ["assets"]
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

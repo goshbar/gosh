@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
-  <body class="page {% if page.title %}{{page.title | downcase}}{%else%}home{%endif%}">
+  <body class="page {% if page.title %}{{page.title | downcase}}{%elsif page.path == 'index.html' %}home{%endif%}">
     {% if page.path != "index.html" %}
       {% include navbar.html %}
     {% endif %}
@@ -11,6 +11,6 @@
       </div>
     </main>
     {% include footer.html %}
-    <script src="{{ '/assets/js/navbar.js' | relative_url}}"></script>
+    <script src="{{ '/assets/js/script.js' | relative_url}}"></script>
   </body>
 </html>

@@ -2,3 +2,15 @@
 <a class="navbar-item" href="{{ '/about' | relative_url }}">about</a>
 <a class="navbar-item social" href="https://www.instagram.com/explore/locations/1763200270672948/gosh/" target="_blank"><i class="fa fa-instagram"></i><a>
 <a class="navbar-item social" href="https://www.facebook.com/Gosh-1763200270672948/" target="_blank"><i class="fa fa-facebook"></i></a>
+<div class="navbar-item lang-nav">
+  <div class="select">
+    <select id="langSelect">
+      {% for lang in site.languages %}
+        <option {% if lang == site.active_lang %}selected{%endif%} value="{% if lang == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ lang }}{{page.url}} {% endif %}">
+          <span class="flag-icon flag-icon-{{lang}}"></span>
+          {{lang | upcase}}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+</div>

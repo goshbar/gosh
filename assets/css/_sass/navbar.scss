@@ -39,3 +39,21 @@
   margin: 20px 10px 0;
   padding: 0;
 }
+
+.lang-nav {
+  .select:after {
+    border-color: $black !important;
+    margin-top: -8px !important;
+  }
+
+  select {
+    background: transparent;
+    border-color: $black;
+    padding-right: 40px !important;
+
+    &:hover, &:focus {
+      border-color: $black;
+      text-decoration: none;
+    }
+  }
+}
