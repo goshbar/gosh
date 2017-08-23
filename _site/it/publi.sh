@@ -1,5 +1,4 @@
 # sh publi.sh
-git checkout site
 rm -rf _site/
 bundle exec jekyll build
 git add --all
