@@ -8,7 +8,9 @@ permalink: /about
   <div class="columns is-centered">
     <div class="column is-4">
       <h1> {{site.data.about.title}}</h1>
-      <p class="about__description">{{site.data.about.description}}</p>
+      <p class="about__description">
+        {{site.data.about.description | markdownify}}
+      </p>
       
     </div>
     <div class="column is-narrow">
